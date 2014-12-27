@@ -149,14 +149,28 @@
                   </block>
                 </statement>
                 <next>
-                  <block type="oled_cleardisplay" id="53">
+                  <block type="oled_setcursor" id="132" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="133">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="134">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="oled_drawnumber" id="122" inline="true">
-                        <value name="NUMBER">
-                          <block type="variables_get" id="123">
-                            <field name="VAR">x</field>
+                      <block type="oled_cleardisplay" id="53">
+                        <next>
+                          <block type="oled_drawnumber" id="122" inline="true">
+                            <value name="NUMBER">
+                              <block type="variables_get" id="123">
+                                <field name="VAR">x</field>
+                              </block>
+                            </value>
                           </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
