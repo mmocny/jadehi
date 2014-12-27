@@ -1,35 +1,45 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="223" x="204" y="48">
-    <next>
-      <block type="robot_delay" id="187" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="199">
-            <field name="NUM">1000</field>
+  <block type="procedures_defreturn" id="314" inline="false" x="-15" y="5">
+    <mutation></mutation>
+    <field name="NAME">dance</field>
+    <statement name="STACK">
+      <block type="movement_setmotors" id="265" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="272">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="279">
+            <field name="NUM">50</field>
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="209">
+          <block type="robot_delay" id="210" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="211">
+                <field name="NUM">100</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="210" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="211">
-                    <field name="NUM">1000</field>
+              <block type="movement_setmotors" id="280" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="281">
+                    <field name="NUM">50</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="282">
+                    <field name="NUM">100</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_left" id="233">
-                    <next>
-                      <block type="robot_delay" id="212" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="213">
-                            <field name="NUM">1000</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_reverse" id="243"></block>
-                        </next>
+                  <block type="robot_delay" id="283" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="284">
+                        <field name="NUM">100</field>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
@@ -37,6 +47,9 @@
           </block>
         </next>
       </block>
-    </next>
+    </statement>
+  </block>
+  <block type="procedures_callreturn" id="328" x="281" y="258">
+    <mutation name="dance"></mutation>
   </block>
 </xml>
