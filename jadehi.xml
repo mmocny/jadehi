@@ -75,23 +75,23 @@
                   </block>
                 </statement>
                 <next>
-                  <block type="oled_setcursor" id="132" inline="true">
+                  <block type="oled_setcursor" id="18" inline="true">
                     <value name="STARTX">
-                      <block type="math_number" id="133">
+                      <block type="math_number" id="19">
                         <field name="NUM">10</field>
                       </block>
                     </value>
                     <value name="STARTY">
-                      <block type="math_number" id="134">
+                      <block type="math_number" id="20">
                         <field name="NUM">10</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_cleardisplay" id="53">
+                      <block type="oled_cleardisplay" id="21">
                         <next>
-                          <block type="oled_drawnumber" id="122" inline="true">
+                          <block type="oled_drawnumber" id="22" inline="true">
                             <value name="NUMBER">
-                              <block type="variables_get" id="123">
+                              <block type="variables_get" id="23">
                                 <field name="VAR">x</field>
                               </block>
                             </value>
@@ -108,62 +108,62 @@
       </block>
     </statement>
     <value name="RETURN">
-      <block type="variables_get" id="18">
+      <block type="variables_get" id="24">
         <field name="VAR">x</field>
       </block>
     </value>
   </block>
-  <block type="movement_forward" id="250" x="260" y="103">
+  <block type="movement_forward" id="25" x="260" y="103">
     <next>
-      <block type="movement_stop" id="240">
+      <block type="movement_stop" id="26">
         <next>
-          <block type="procedures_callnoreturn" id="219">
+          <block type="procedures_callnoreturn" id="27">
             <mutation name="jednakostka"></mutation>
             <next>
-              <block type="movement_stop" id="34"></block>
+              <block type="movement_stop" id="28"></block>
             </next>
           </block>
         </next>
       </block>
     </next>
   </block>
-  <block type="procedures_defreturn" id="135" inline="false" x="606" y="400">
+  <block type="procedures_defreturn" id="29" inline="false" x="606" y="400">
     <mutation></mutation>
     <field name="NAME">random2</field>
     <statement name="STACK">
-      <block type="variables_set" id="136" inline="true">
+      <block type="variables_set" id="30" inline="true">
         <field name="VAR">x</field>
         <value name="VALUE">
-          <block type="math_arithmetic" id="165" inline="true">
+          <block type="math_arithmetic" id="31" inline="true">
             <field name="OP">MULTIPLY</field>
             <value name="A">
-              <block type="math_random" id="166"></block>
+              <block type="math_random" id="32"></block>
             </value>
             <value name="B">
-              <block type="math_number" id="137">
+              <block type="math_number" id="33">
                 <field name="NUM">10</field>
               </block>
             </value>
           </block>
         </value>
         <next>
-          <block type="oled_setcursor" id="152" inline="true">
+          <block type="oled_setcursor" id="34" inline="true">
             <value name="STARTX">
-              <block type="math_number" id="153">
+              <block type="math_number" id="35">
                 <field name="NUM">10</field>
               </block>
             </value>
             <value name="STARTY">
-              <block type="math_number" id="154">
+              <block type="math_number" id="36">
                 <field name="NUM">10</field>
               </block>
             </value>
             <next>
-              <block type="oled_cleardisplay" id="155">
+              <block type="oled_cleardisplay" id="37">
                 <next>
-                  <block type="oled_drawnumber" id="156" inline="true">
+                  <block type="oled_drawnumber" id="38" inline="true">
                     <value name="NUMBER">
-                      <block type="variables_get" id="157">
+                      <block type="variables_get" id="39">
                         <field name="VAR">x</field>
                       </block>
                     </value>
@@ -176,73 +176,73 @@
       </block>
     </statement>
     <value name="RETURN">
-      <block type="variables_get" id="158">
+      <block type="variables_get" id="40">
         <field name="VAR">x</field>
       </block>
     </value>
   </block>
-  <block type="procedures_defnoreturn" id="178" x="33" y="461">
+  <block type="procedures_defnoreturn" id="41" x="33" y="461">
     <mutation></mutation>
     <field name="NAME">tenkostek</field>
     <statement name="STACK">
-      <block type="movement_forward" id="19">
+      <block type="movement_forward" id="42">
         <next>
-          <block type="robot_delay" id="20" inline="true">
+          <block type="robot_delay" id="43" inline="true">
             <value name="DELAY">
-              <block type="math_arithmetic" id="21" inline="true">
+              <block type="math_arithmetic" id="44" inline="true">
                 <field name="OP">MULTIPLY</field>
                 <value name="A">
-                  <block type="procedures_callreturn" id="22">
+                  <block type="procedures_callreturn" id="45">
                     <mutation name="random"></mutation>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_number" id="23">
+                  <block type="math_number" id="46">
                     <field name="NUM">5</field>
                   </block>
                 </value>
               </block>
             </value>
             <next>
-              <block type="movement_left" id="24">
+              <block type="movement_left" id="47">
                 <next>
-                  <block type="robot_delay" id="25" inline="true">
+                  <block type="robot_delay" id="48" inline="true">
                     <value name="DELAY">
-                      <block type="math_arithmetic" id="26" inline="true">
+                      <block type="math_arithmetic" id="49" inline="true">
                         <field name="OP">MULTIPLY</field>
                         <value name="A">
-                          <block type="procedures_callreturn" id="27">
+                          <block type="procedures_callreturn" id="50">
                             <mutation name="random"></mutation>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="math_number" id="28">
+                          <block type="math_number" id="51">
                             <field name="NUM">5</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_right" id="29">
+                      <block type="movement_right" id="52">
                         <next>
-                          <block type="robot_delay" id="30" inline="true">
+                          <block type="robot_delay" id="53" inline="true">
                             <value name="DELAY">
-                              <block type="math_arithmetic" id="31" inline="true">
+                              <block type="math_arithmetic" id="54" inline="true">
                                 <field name="OP">MULTIPLY</field>
                                 <value name="A">
-                                  <block type="procedures_callreturn" id="32">
+                                  <block type="procedures_callreturn" id="55">
                                     <mutation name="random"></mutation>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id="33">
+                                  <block type="math_number" id="56">
                                     <field name="NUM">5</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <next>
-                              <block type="movement_stop" id="220"></block>
+                              <block type="movement_stop" id="57"></block>
                             </next>
                           </block>
                         </next>
@@ -257,68 +257,68 @@
       </block>
     </statement>
   </block>
-  <block type="procedures_defnoreturn" id="179" x="266" y="478">
+  <block type="procedures_defnoreturn" id="58" x="266" y="478">
     <mutation></mutation>
     <field name="NAME">jednakostka</field>
     <statement name="STACK">
-      <block type="movement_forward" id="180">
+      <block type="movement_forward" id="59">
         <next>
-          <block type="robot_delay" id="181" inline="true">
+          <block type="robot_delay" id="60" inline="true">
             <value name="DELAY">
-              <block type="math_arithmetic" id="182" inline="true">
+              <block type="math_arithmetic" id="61" inline="true">
                 <field name="OP">MULTIPLY</field>
                 <value name="A">
-                  <block type="procedures_callreturn" id="209">
+                  <block type="procedures_callreturn" id="62">
                     <mutation name="random2"></mutation>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_number" id="184">
+                  <block type="math_number" id="63">
                     <field name="NUM">5</field>
                   </block>
                 </value>
               </block>
             </value>
             <next>
-              <block type="movement_left" id="185">
+              <block type="movement_left" id="64">
                 <next>
-                  <block type="robot_delay" id="186" inline="true">
+                  <block type="robot_delay" id="65" inline="true">
                     <value name="DELAY">
-                      <block type="math_arithmetic" id="187" inline="true">
+                      <block type="math_arithmetic" id="66" inline="true">
                         <field name="OP">MULTIPLY</field>
                         <value name="A">
-                          <block type="procedures_callreturn" id="210">
+                          <block type="procedures_callreturn" id="67">
                             <mutation name="random2"></mutation>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="math_number" id="189">
+                          <block type="math_number" id="68">
                             <field name="NUM">5</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_right" id="190">
+                      <block type="movement_right" id="69">
                         <next>
-                          <block type="robot_delay" id="191" inline="true">
+                          <block type="robot_delay" id="70" inline="true">
                             <value name="DELAY">
-                              <block type="math_arithmetic" id="192" inline="true">
+                              <block type="math_arithmetic" id="71" inline="true">
                                 <field name="OP">MULTIPLY</field>
                                 <value name="A">
-                                  <block type="procedures_callreturn" id="211">
+                                  <block type="procedures_callreturn" id="72">
                                     <mutation name="random2"></mutation>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id="194">
+                                  <block type="math_number" id="73">
                                     <field name="NUM">5</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <next>
-                              <block type="movement_stop" id="195"></block>
+                              <block type="movement_stop" id="74"></block>
                             </next>
                           </block>
                         </next>
