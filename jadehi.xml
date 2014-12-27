@@ -36,8 +36,8 @@
                               <block type="math_arithmetic" id="36" inline="true">
                                 <field name="OP">MULTIPLY</field>
                                 <value name="A">
-                                  <block type="math_number" id="179">
-                                    <field name="NUM">0</field>
+                                  <block type="procedures_callreturn" id="190">
+                                    <mutation name="random2"></mutation>
                                   </block>
                                 </value>
                                 <value name="B">
