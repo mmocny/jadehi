@@ -1,4 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_stop" id="26" x="163" y="33">
+    <next>
+      <block type="movement_forward" id="84"></block>
+    </next>
+  </block>
   <block type="procedures_defreturn" id="1" inline="false" x="600" y="17">
     <mutation></mutation>
     <field name="NAME">random</field>
@@ -112,16 +117,6 @@
         <field name="VAR">x</field>
       </block>
     </value>
-  </block>
-  <block type="movement_stop" id="26" x="260" y="169">
-    <next>
-      <block type="procedures_callnoreturn" id="27">
-        <mutation name="jednakostka"></mutation>
-        <next>
-          <block type="movement_stop" id="28"></block>
-        </next>
-      </block>
-    </next>
   </block>
   <block type="procedures_defreturn" id="29" inline="false" x="606" y="400">
     <mutation></mutation>
