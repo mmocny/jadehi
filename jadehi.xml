@@ -49,4 +49,7 @@
       </block>
     </statement>
   </block>
+  <block type="procedures_callnoreturn" id="352" x="255" y="269">
+    <mutation name="dance"></mutation>
+  </block>
 </xml>
