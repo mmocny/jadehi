@@ -334,13 +334,4 @@
       </block>
     </statement>
   </block>
-  <block type="procedures_defnoreturn" id="58" x="429" y="609">
-    <mutation></mutation>
-    <field name="NAME">jednakostka</field>
-    <statement name="STACK">
-      <block type="procedures_callnoreturn" id="93">
-        <mutation name="jednakostka"></mutation>
-      </block>
-    </statement>
-  </block>
 </xml>
