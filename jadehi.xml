@@ -1,43 +1,149 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="58" x="249" y="63">
-    <next>
-      <block type="robot_delay" id="60" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="70">
-            <field name="NUM">3000</field>
+  <block type="procedures_defreturn" id="318" inline="false" x="529" y="7">
+    <mutation></mutation>
+    <field name="NAME">random</field>
+    <statement name="STACK">
+      <block type="variables_set" id="239" inline="true">
+        <field name="VAR">x</field>
+        <value name="VALUE">
+          <block type="math_number" id="240">
+            <field name="NUM">0</field>
           </block>
         </value>
         <next>
-          <block type="movement_left" id="80">
+          <block type="variables_set" id="219" inline="true">
+            <field name="VAR">i</field>
+            <value name="VALUE">
+              <block type="math_number" id="232">
+                <field name="NUM">0</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="82" inline="true">
+              <block type="controls_whileUntil" id="238" inline="false">
+                <field name="MODE">WHILE</field>
+                <value name="NUMBER">
+                  <block type="logic_compare" id="252" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="variables_get" id="257">
+                        <field name="VAR">i</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="264">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="269" inline="true">
+                    <field name="VAR">i</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="180" inline="true">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="280">
+                            <field name="VAR">i</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="287">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="308" inline="true">
+                        <field name="VAR">x</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="312" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="variables_get" id="313">
+                                <field name="VAR">x</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_random" id="210"></block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="325">
+        <field name="VAR">x</field>
+      </block>
+    </value>
+  </block>
+  <block type="movement_forward" id="335" x="21" y="59">
+    <next>
+      <block type="robot_delay" id="357" inline="true">
+        <value name="DELAY">
+          <block type="math_arithmetic" id="375" inline="true">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <block type="procedures_callreturn" id="366">
+                <mutation name="random"></mutation>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="382">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="movement_left" id="345">
+            <next>
+              <block type="robot_delay" id="359" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="89">
-                    <field name="NUM">5000</field>
+                  <block type="math_arithmetic" id="383" inline="true">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <block type="procedures_callreturn" id="384">
+                        <mutation name="random"></mutation>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="385">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stutter" id="99">
+                  <block type="movement_right" id="355">
                     <next>
-                      <block type="robot_delay" id="107" inline="true">
+                      <block type="robot_delay" id="361" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="114">
-                            <field name="NUM">5000</field>
+                          <block type="math_arithmetic" id="386" inline="true">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <block type="procedures_callreturn" id="387">
+                                <mutation name="random"></mutation>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="388">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_setmotors" id="124" inline="true">
-                            <value name="BOTHMOVLEFT">
-                              <block type="math_number" id="131">
-                                <field name="NUM">10000</field>
-                              </block>
-                            </value>
-                            <value name="BOTHMOVRIGHT">
-                              <block type="math_number" id="138">
-                                <field name="NUM">10000</field>
-                              </block>
-                            </value>
-                          </block>
+                          <block type="movement_stop" id="398"></block>
                         </next>
                       </block>
                     </next>
