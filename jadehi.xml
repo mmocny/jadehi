@@ -113,12 +113,16 @@
       </block>
     </value>
   </block>
-  <block type="movement_stop" id="26" x="234" y="112">
+  <block type="movement_forward" id="113" x="232" y="92">
     <next>
-      <block type="procedures_callnoreturn" id="93">
-        <mutation name="jednakostka"></mutation>
+      <block type="movement_stop" id="26">
         <next>
-          <block type="movement_stop" id="103"></block>
+          <block type="procedures_callnoreturn" id="93">
+            <mutation name="jednakostka"></mutation>
+            <next>
+              <block type="movement_stop" id="103"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
