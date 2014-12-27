@@ -113,79 +113,75 @@
       </block>
     </value>
   </block>
-  <block type="movement_stop" id="145" x="203" y="130">
+  <block type="movement_stutter" id="155" x="170" y="191">
     <next>
-      <block type="movement_stutter" id="155">
+      <block type="robot_delay" id="167" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="174">
+            <field name="NUM">1000</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="167" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="174">
-                <field name="NUM">1000</field>
-              </block>
-            </value>
+          <block type="movement_stop" id="165">
             <next>
-              <block type="movement_stop" id="165">
+              <block type="movement_forward" id="59">
                 <next>
-                  <block type="movement_forward" id="59">
-                    <next>
-                      <block type="robot_delay" id="60" inline="true">
-                        <value name="DELAY">
-                          <block type="math_arithmetic" id="61" inline="true">
-                            <field name="OP">MULTIPLY</field>
-                            <value name="A">
-                              <block type="procedures_callreturn" id="62">
-                                <mutation name="random2"></mutation>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block type="math_number" id="63">
-                                <field name="NUM">5</field>
-                              </block>
-                            </value>
+                  <block type="robot_delay" id="60" inline="true">
+                    <value name="DELAY">
+                      <block type="math_arithmetic" id="61" inline="true">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="procedures_callreturn" id="62">
+                            <mutation name="random2"></mutation>
                           </block>
                         </value>
+                        <value name="B">
+                          <block type="math_number" id="63">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_left" id="64">
                         <next>
-                          <block type="movement_left" id="64">
-                            <next>
-                              <block type="robot_delay" id="65" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_arithmetic" id="66" inline="true">
-                                    <field name="OP">MULTIPLY</field>
-                                    <value name="A">
-                                      <block type="procedures_callreturn" id="67">
-                                        <mutation name="random2"></mutation>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="math_number" id="68">
-                                        <field name="NUM">5</field>
-                                      </block>
-                                    </value>
+                          <block type="robot_delay" id="65" inline="true">
+                            <value name="DELAY">
+                              <block type="math_arithmetic" id="66" inline="true">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <block type="procedures_callreturn" id="67">
+                                    <mutation name="random2"></mutation>
                                   </block>
                                 </value>
+                                <value name="B">
+                                  <block type="math_number" id="68">
+                                    <field name="NUM">5</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_right" id="69">
                                 <next>
-                                  <block type="movement_right" id="69">
-                                    <next>
-                                      <block type="robot_delay" id="70" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_arithmetic" id="71" inline="true">
-                                            <field name="OP">MULTIPLY</field>
-                                            <value name="A">
-                                              <block type="procedures_callreturn" id="72">
-                                                <mutation name="random2"></mutation>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="73">
-                                                <field name="NUM">5</field>
-                                              </block>
-                                            </value>
+                                  <block type="robot_delay" id="70" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_arithmetic" id="71" inline="true">
+                                        <field name="OP">MULTIPLY</field>
+                                        <value name="A">
+                                          <block type="procedures_callreturn" id="72">
+                                            <mutation name="random2"></mutation>
                                           </block>
                                         </value>
-                                        <next>
-                                          <block type="movement_stop" id="74"></block>
-                                        </next>
+                                        <value name="B">
+                                          <block type="math_number" id="73">
+                                            <field name="NUM">5</field>
+                                          </block>
+                                        </value>
                                       </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="74"></block>
                                     </next>
                                   </block>
                                 </next>
@@ -257,81 +253,5 @@
         <field name="VAR">x</field>
       </block>
     </value>
-  </block>
-  <block type="procedures_defnoreturn" id="41" x="94" y="516">
-    <mutation></mutation>
-    <field name="NAME">tenkostek</field>
-    <statement name="STACK">
-      <block type="movement_forward" id="42">
-        <next>
-          <block type="robot_delay" id="43" inline="true">
-            <value name="DELAY">
-              <block type="math_arithmetic" id="44" inline="true">
-                <field name="OP">MULTIPLY</field>
-                <value name="A">
-                  <block type="procedures_callreturn" id="45">
-                    <mutation name="random"></mutation>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="46">
-                    <field name="NUM">5</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <next>
-              <block type="movement_left" id="47">
-                <next>
-                  <block type="robot_delay" id="48" inline="true">
-                    <value name="DELAY">
-                      <block type="math_arithmetic" id="49" inline="true">
-                        <field name="OP">MULTIPLY</field>
-                        <value name="A">
-                          <block type="procedures_callreturn" id="50">
-                            <mutation name="random"></mutation>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="51">
-                            <field name="NUM">5</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_right" id="52">
-                        <next>
-                          <block type="robot_delay" id="53" inline="true">
-                            <value name="DELAY">
-                              <block type="math_arithmetic" id="54" inline="true">
-                                <field name="OP">MULTIPLY</field>
-                                <value name="A">
-                                  <block type="procedures_callreturn" id="55">
-                                    <mutation name="random"></mutation>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="56">
-                                    <field name="NUM">5</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="movement_stop" id="57"></block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </statement>
   </block>
 </xml>
