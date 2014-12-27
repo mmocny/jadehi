@@ -67,7 +67,30 @@
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_stop" id="44"></block>
+                                      <block type="movement_stop" id="44">
+                                        <next>
+                                          <block type="movement_reverse" id="66">
+                                            <next>
+                                              <block type="robot_delay" id="74" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="81">
+                                                    <field name="NUM">5000</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="movement_leftmotor" id="91" inline="true">
+                                                    <value name="MOVLEFT">
+                                                      <block type="math_number" id="98">
+                                                        <field name="NUM">10000</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
@@ -86,7 +109,7 @@
       </block>
     </next>
   </block>
-  <block type="procedures_defreturn" id="45" inline="false" x="638" y="249">
+  <block type="procedures_defreturn" id="45" inline="false" x="597" y="179">
     <mutation></mutation>
     <field name="NAME">random2</field>
     <statement name="STACK">
