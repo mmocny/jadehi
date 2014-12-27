@@ -113,12 +113,26 @@
       </block>
     </value>
   </block>
-  <block type="movement_forward" id="113" x="232" y="92">
+  <block type="movement_stop" id="145" x="203" y="130">
     <next>
-      <block type="procedures_callnoreturn" id="93">
-        <mutation name="jednakostka"></mutation>
+      <block type="movement_stutter" id="155">
         <next>
-          <block type="movement_stop" id="103"></block>
+          <block type="robot_delay" id="167" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="174">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="165">
+                <next>
+                  <block type="procedures_callnoreturn" id="93">
+                    <mutation name="jednakostka"></mutation>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
