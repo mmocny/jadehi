@@ -67,8 +67,12 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="procedures_callnoreturn" id="2">
-        <mutation name="dance"></mutation>
+      <block type="movement_stop" id="133">
+        <next>
+          <block type="procedures_callnoreturn" id="2">
+            <mutation name="dance"></mutation>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
