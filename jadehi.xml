@@ -1,35 +1,85 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_callnoreturn" id="22" x="259" y="150">
-    <mutation name="dance2"></mutation>
+  <block type="procedures_callnoreturn" id="22" x="272" y="22">
+    <mutation name="dancefwd"></mutation>
     <next>
       <block type="procedures_callnoreturn" id="21">
-        <mutation name="dance2"></mutation>
+        <mutation name="dancefwd"></mutation>
         <next>
           <block type="procedures_callnoreturn" id="20">
-            <mutation name="dance2"></mutation>
+            <mutation name="dancefwd"></mutation>
             <next>
               <block type="procedures_callnoreturn" id="13">
-                <mutation name="dance2"></mutation>
+                <mutation name="dancefwd"></mutation>
                 <next>
                   <block type="procedures_callnoreturn" id="14">
-                    <mutation name="dance2"></mutation>
+                    <mutation name="dancefwd"></mutation>
                     <next>
-                      <block type="procedures_callnoreturn" id="15">
-                        <mutation name="dance2"></mutation>
+                      <block type="procedures_callnoreturn" id="40">
+                        <mutation name="dancervs"></mutation>
                         <next>
-                          <block type="procedures_callnoreturn" id="16">
-                            <mutation name="dance2"></mutation>
+                          <block type="procedures_callnoreturn" id="39">
+                            <mutation name="dancervs"></mutation>
                             <next>
-                              <block type="procedures_callnoreturn" id="17">
-                                <mutation name="dance2"></mutation>
+                              <block type="procedures_callnoreturn" id="41">
+                                <mutation name="dancervs"></mutation>
                                 <next>
-                                  <block type="procedures_callnoreturn" id="18">
-                                    <mutation name="dance2"></mutation>
+                                  <block type="procedures_callnoreturn" id="42">
+                                    <mutation name="dancervs"></mutation>
                                     <next>
-                                      <block type="procedures_callnoreturn" id="19">
-                                        <mutation name="dance2"></mutation>
+                                      <block type="procedures_callnoreturn" id="43">
+                                        <mutation name="dancervs"></mutation>
                                         <next>
-                                          <block type="movement_stop" id="12"></block>
+                                          <block type="procedures_callnoreturn" id="15">
+                                            <mutation name="dancefwd"></mutation>
+                                            <next>
+                                              <block type="procedures_callnoreturn" id="16">
+                                                <mutation name="dancefwd"></mutation>
+                                                <next>
+                                                  <block type="procedures_callnoreturn" id="17">
+                                                    <mutation name="dancefwd"></mutation>
+                                                    <next>
+                                                      <block type="procedures_callnoreturn" id="18">
+                                                        <mutation name="dancefwd"></mutation>
+                                                        <next>
+                                                          <block type="procedures_callnoreturn" id="19">
+                                                            <mutation name="dancefwd"></mutation>
+                                                            <next>
+                                                              <block type="procedures_callnoreturn" id="45">
+                                                                <mutation name="dancervs"></mutation>
+                                                                <next>
+                                                                  <block type="procedures_callnoreturn" id="48">
+                                                                    <mutation name="dancervs"></mutation>
+                                                                    <next>
+                                                                      <block type="procedures_callnoreturn" id="46">
+                                                                        <mutation name="dancervs"></mutation>
+                                                                        <next>
+                                                                          <block type="procedures_callnoreturn" id="47">
+                                                                            <mutation name="dancervs"></mutation>
+                                                                            <next>
+                                                                              <block type="procedures_callnoreturn" id="44">
+                                                                                <mutation name="dancervs"></mutation>
+                                                                                <next>
+                                                                                  <block type="movement_stop" id="12"></block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
                                         </next>
                                       </block>
                                     </next>
@@ -50,9 +100,59 @@
       </block>
     </next>
   </block>
-  <block type="procedures_defnoreturn" id="1" x="654" y="168">
+  <block type="procedures_defnoreturn" id="23" x="646" y="87">
     <mutation></mutation>
-    <field name="NAME">dance2</field>
+    <field name="NAME">dancervs</field>
+    <statement name="STACK">
+      <block type="movement_setmotors" id="24" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="25">
+            <field name="NUM">-25</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="26">
+            <field name="NUM">-150</field>
+          </block>
+        </value>
+        <next>
+          <block type="robot_delay" id="27" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="28">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_setmotors" id="29" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="30">
+                    <field name="NUM">-150</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="31">
+                    <field name="NUM">-25</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="robot_delay" id="32" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="33">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="1" x="654" y="289">
+    <mutation></mutation>
+    <field name="NAME">dancefwd</field>
     <statement name="STACK">
       <block type="movement_setmotors" id="2" inline="true">
         <value name="BOTHMOVLEFT">
@@ -62,7 +162,7 @@
         </value>
         <value name="BOTHMOVRIGHT">
           <block type="math_number" id="4">
-            <field name="NUM">50</field>
+            <field name="NUM">150</field>
           </block>
         </value>
         <next>
@@ -76,7 +176,7 @@
               <block type="movement_setmotors" id="7" inline="true">
                 <value name="BOTHMOVLEFT">
                   <block type="math_number" id="8">
-                    <field name="NUM">50</field>
+                    <field name="NUM">150</field>
                   </block>
                 </value>
                 <value name="BOTHMOVRIGHT">
