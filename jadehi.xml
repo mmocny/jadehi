@@ -1,11 +1,4 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_stop" id="1" x="136" y="124">
-    <next>
-      <block type="procedures_callnoreturn" id="2">
-        <mutation name="dance"></mutation>
-      </block>
-    </next>
-  </block>
   <block type="procedures_defnoreturn" id="3" x="582" y="101">
     <mutation></mutation>
     <field name="NAME">dance</field>
@@ -53,6 +46,29 @@
             </next>
           </block>
         </next>
+      </block>
+    </statement>
+  </block>
+  <block type="controls_whileUntil" id="19" inline="false" x="106" y="184">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="logic_compare" id="103" inline="true">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="math_number" id="115">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="122">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="2">
+        <mutation name="dance"></mutation>
       </block>
     </statement>
   </block>
