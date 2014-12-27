@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_defnoreturn" id="347" x="17" y="29">
+  <block type="procedures_defnoreturn" id="347" x="582" y="101">
     <mutation></mutation>
     <field name="NAME">dance</field>
     <statement name="STACK">
@@ -49,7 +49,11 @@
       </block>
     </statement>
   </block>
-  <block type="procedures_callnoreturn" id="352" x="255" y="269">
-    <mutation name="dance"></mutation>
+  <block type="movement_stop" id="381" x="172" y="200">
+    <next>
+      <block type="procedures_callnoreturn" id="352">
+        <mutation name="dance"></mutation>
+      </block>
+    </next>
   </block>
 </xml>
