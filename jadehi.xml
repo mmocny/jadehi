@@ -100,6 +100,29 @@
                                                                     <field name="NUM">5000</field>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="movement_setmotors" id="149" inline="true">
+                                                                    <value name="BOTHMOVLEFT">
+                                                                      <block type="math_number" id="158">
+                                                                        <field name="NUM">10000</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="BOTHMOVRIGHT">
+                                                                      <block type="math_number" id="165">
+                                                                        <field name="NUM">10000</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="robot_delay" id="151" inline="true">
+                                                                        <value name="DELAY">
+                                                                          <block type="math_number" id="172">
+                                                                            <field name="NUM">3000</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
