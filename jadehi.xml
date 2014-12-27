@@ -1,4 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_stop" id="381" x="136" y="124">
+    <next>
+      <block type="procedures_callnoreturn" id="352">
+        <mutation name="dance"></mutation>
+      </block>
+    </next>
+  </block>
   <block type="procedures_defnoreturn" id="347" x="582" y="101">
     <mutation></mutation>
     <field name="NAME">dance</field>
@@ -48,12 +55,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="movement_stop" id="381" x="172" y="200">
-    <next>
-      <block type="procedures_callnoreturn" id="352">
-        <mutation name="dance"></mutation>
-      </block>
-    </next>
   </block>
 </xml>
