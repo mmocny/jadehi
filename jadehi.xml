@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="procedures_defreturn" id="314" inline="false" x="-15" y="5">
+  <block type="procedures_defnoreturn" id="347" x="17" y="29">
     <mutation></mutation>
     <field name="NAME">dance</field>
     <statement name="STACK">
@@ -48,8 +48,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="procedures_callreturn" id="328" x="281" y="258">
-    <mutation name="dance"></mutation>
   </block>
 </xml>
