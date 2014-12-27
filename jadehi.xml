@@ -120,7 +120,40 @@
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="movement_stop" id="200"></block>
+                                                                          <block type="movement_rightmotor" id="210" inline="true">
+                                                                            <value name="MOVRIGHT">
+                                                                              <block type="math_number" id="217">
+                                                                                <field name="NUM">10000</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="robot_delay" id="219" inline="true">
+                                                                                <value name="DELAY">
+                                                                                  <block type="math_number" id="231">
+                                                                                    <field name="NUM">2000</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="movement_rightmotor" id="250" inline="true">
+                                                                                    <value name="MOVRIGHT">
+                                                                                      <block type="math_number" id="238">
+                                                                                        <field name="NUM">10000</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="robot_delay" id="240" inline="true">
+                                                                                        <value name="DELAY">
+                                                                                          <block type="math_number" id="261">
+                                                                                            <field name="NUM">3000</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
                                                                         </next>
                                                                       </block>
                                                                     </next>
