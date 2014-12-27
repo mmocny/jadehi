@@ -14,7 +14,7 @@
                 </value>
                 <value name="B">
                   <block type="math_number" id="23">
-                    <field name="NUM">10</field>
+                    <field name="NUM">5</field>
                   </block>
                 </value>
               </block>
@@ -33,7 +33,7 @@
                         </value>
                         <value name="B">
                           <block type="math_number" id="28">
-                            <field name="NUM">10</field>
+                            <field name="NUM">5</field>
                           </block>
                         </value>
                       </block>
@@ -52,7 +52,7 @@
                                 </value>
                                 <value name="B">
                                   <block type="math_number" id="33">
-                                    <field name="NUM">10</field>
+                                    <field name="NUM">5</field>
                                   </block>
                                 </value>
                               </block>
@@ -148,6 +148,19 @@
                     </next>
                   </block>
                 </statement>
+                <next>
+                  <block type="oled_cleardisplay" id="53">
+                    <next>
+                      <block type="oled_drawnumber" id="122" inline="true">
+                        <value name="NUMBER">
+                          <block type="variables_get" id="123">
+                            <field name="VAR">x</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
